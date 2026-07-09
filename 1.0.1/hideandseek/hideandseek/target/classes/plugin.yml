@@ -1,0 +1,40 @@
+name: HideAndSeek
+version: 1.0.1
+main: com.hideandseek.Main
+api-version: 1.21
+author: YourName
+
+commands:
+  start:
+    description: Запустить игру
+    usage: /start
+    permission: hideandseek.admin
+  stop:
+    description: Принудительно остановить игру и сбросить всё
+    usage: /stop
+    permission: hideandseek.admin
+  sethub:
+    description: Сохранить текущую позицию как хаб
+    usage: /sethub
+    permission: hideandseek.admin
+  setforest:
+    description: Сохранить текущую позицию как карту "Лесной приют"
+    usage: /setforest
+    permission: hideandseek.admin
+  setdesert:
+    description: Сохранить текущую позицию как карту "Пепельные пески"
+    usage: /setdesert
+    permission: hideandseek.admin
+  setswamp:
+    description: Сохранить текущую позицию как карту "Плачущие топи"
+    usage: /setswamp
+    permission: hideandseek.admin
+  debug:
+    description: Включить/выключить режим отладки (сообщения в чат админу)
+    usage: /debug <on|off>
+    permission: hideandseek.admin
+
+permissions:
+  hideandseek.admin:
+    description: Доступ к админским командам плагина
+    default: op
